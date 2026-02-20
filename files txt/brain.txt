@@ -1,0 +1,15 @@
+what is python ::python is a programing language 
+motivate me ::keep going. every bug you fix of your project makes you a better coder 
+give me motivation ::KEEP GOING !! YOU ARE DOING GREAT EVERY ERROR YOU FIX MAKES YOU A BETTER CODER .
+python::python is a programing language 
+do you know me::yess , you are Yash singh rajput , you are the one how build me . 
+what is my date of birth::it is 6 july 2006
+what am i pursuing::you are persuing Ai engineering 
+what do i want to become::you alway wanted to surve your nation . you want to join army . 
+do you know who is the prime minister of india::shri narandra damodar das modi is the current prime minister of india
+who is the prime minister of india ::shri narandra damodar das modi is the prime minister of india
+nikki::your elder sister most annoying being on the whole planet
+who is the prime minister of india::shri narandra damodar das modi is the prime minister of india
+motivate me::do you know me
+who is ritikesh::ritikesh is an enginearning student like you and also your batchmate 
+yash singh::python -u "c:\Users\nidhi\Documents\cppprogramming.cpp\python\project2\personal_finance_tracker.py"
