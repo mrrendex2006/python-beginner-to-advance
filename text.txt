@@ -1,3 +1,0 @@
-0|learn python libraries numpy pandas
-0|learn ml fundamentals
-0|learn about deep learning
