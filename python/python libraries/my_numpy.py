@@ -1,6 +1,6 @@
 import numpy as np
 #arr=np.array({1,2,3,4,5})# here we have used list datatype
-arr=np.array((1,2,3,4,5))#here we are using turple datatype
+'''arr=np.array((1,2,3,4,5))#here we are using turple datatype
 print("array ",arr)
 print("array type",type(arr))
 print(np.__version__)
@@ -140,11 +140,13 @@ x=arr.copy()
 y=arr.view()
 print(x.base)#every numpy array has the attribute base that returns none if the array own the date 
 #otherwise the base attribute refers to the original object.
-print(y.base)
-
+print(y.base)'''
+'''output:
+None
+[1 2 3 4 5]'''
 #numpy arrays have an attribute called shape that returns a tuple with each index
 #having the number of corresponding elements.
-
+'''
 arr=np.array([[1,2,3,4],[5,6,7,8]])
 print(arr.shape)
 #output :(2, 4)
@@ -152,32 +154,47 @@ print(arr.shape)
 arr=np.array([1,2,3,4],ndmin=5)
 print(arr)
 print('shape of array:',arr.shape)
-
+#output:'''
+'''[[[[[1 2 3 4]]]]]
+shape of array: (1, 1, 1, 1, 4)'''
 #integers at every index tells about the number of elements the corresponding demension has 
 #above at index 4 we have value 4 so we can say that 5 th (4 + 1 th)dimensio has 4 elements 
 
 #RESHAPING ARRAYS (reshaping from 1 D to 2 D )
+'''
 arr=np.array([1,2,3,4,5,6,7,8,9,10,11,12])
 newarr=arr.reshape(4,3)
-print(newarr)
-
+print(newarr)'''
+'''output 
+[[ 1  2  3]
+ [ 4  5  6]
+ [ 7  8  9]
+ [10 11 12]]'''
 
  # reshaping from 1D to 3D
-newarr=arr.reshape(2,3,2)
-print(newarr)
+'''newarr=arr.reshape(2,3,2)
+print(newarr)'''
+'''output
+[[[ 1  2]
+  [ 3  4]
+  [ 5  6]]
 
+ [[ 7  8]
+  [ 9 10]
+  [11 12]]]'''
 
 # returns copy or view (check if the return array is copy or view )
-arr=np.array([1,2,3,4,5,6,7,8])
+'''arr=np.array([1,2,3,4,5,6,7,8])
 print(arr.reshape(2,4).base)
-
-#the above code results orignal array it means it is a view
+#output '''
+'''[1 2 3 4 5 6 7 8]
+the above code results orignal array it means it is a view'''
 
 #note: you are allowed to have one "unknown" deminsion.
 '''meaning that you dont have to specify an exact number of 
 one of the dementions in the reshape method.
 pass -1 as the value and numpy will calculate this number for you.'''
-
+'''
 arr=np.array([1,2,3,4,5,6,7,8])
 newarr=arr.reshape(2,2,-1)
 print(newarr)
@@ -188,6 +205,7 @@ print(newarr)
 arr=np.array([[1,2,3],[4,5,6]])
 newarr=arr.reshape(-1)
 print(newarr)
+#output: [1 2 3 4 5 6]
 
 #iterating arrays 
 
@@ -225,15 +243,15 @@ for x in np.nditer(arr):
 
 #Iterating Array With Different Data Types
 '''
-We can use op_dtypes argument and pass it the expected datatype
+'''We can use op_dtypes argument and pass it the expected datatype
  to change the datatype of elements while iterating.
 NumPy does not change the data type of the element in-place
  (where the element is in array) so it needs some other space
   to perform this action, that extra space is called buffer,
- and in order to enable it in nditer() we pass flags=['buffered'].'''
+ and in order to enable it in nditer() we pass flags=['buffered'].
+'''
 
-
-
+'''
 
 arr = np.array([1, 2, 3])
 
@@ -259,7 +277,8 @@ print(arr)
 arr=np.arange(5,20)#creating range of values (start,end(n-1),step size)
 print(arr)
 #You can also use np.linspace() to create an array with values that are spaced linearly
-#in a specified interval:
+#in a specified interval:'''
+'''
 arr=np.arange(2, 9, 2)
 print(arr)
 
@@ -294,7 +313,7 @@ print(np.concatenate((a, b)))
 x = np.array([[1, 2], [3, 4]])
 y = np.array([[5, 6]])
 print(np.concatenate((x, y), axis=0))# means the result will be ontop in one axis 
-
+'''
 
 #How to create an array from existing data
 a1 = np.array([[1, 1],
@@ -311,16 +330,3 @@ x = np.arange(1, 25).reshape(2, 12)# 1 to 25 numbers in 2 rows and 12 colums
 print(x)
 c=np.hsplit(x, 3)#If you wanted to split this array into three equally shaped arrays
 print(c)
-
-# randon distribution:
-arr=np.random.rand(3,3)
-print(arr)
-
-arr=np.random.randn(4,4)
-print(arr)
-
-arr=np.random.randint(0,20,8).reshape(4,2)# randint help to specify range (start,end,size)
-print(arr)
-
-arr=np.random.random_sample((1,5))# ranges to 0.0 to 1.0
-print(arr)
