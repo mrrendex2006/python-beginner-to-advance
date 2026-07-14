@@ -1,0 +1,18 @@
+{
+  "models": [
+    {
+      "title": "Qwen Coder",
+      "provider": "ollama",
+      "model": "qwen2.5-coder:1.5b"
+    }
+  ],
+  "tabAutocompleteModel": {
+    "title": "Qwen Autocomplete",
+    "provider": "ollama",
+    "model": "qwen2.5-coder:1.5b"
+  },
+  "embeddingsProvider": {
+    "provider": "ollama",
+    "model": "nomic-embed-text"
+  }
+}
