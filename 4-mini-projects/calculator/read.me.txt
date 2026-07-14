@@ -1,0 +1,93 @@
+# 🎯calculator (Python)
+
+A simple  ** calculator ** built using Python.
+The program asks your choice **ADDITION,SUBSTRACTION,MULTIPLICATION,DIVISION**, and the user select operator then provide two inputs .
+
+---
+
+## 🚀 Features
+
+* 🔢 Asks choice ADDITION,SUBSTRACTION,MULTIPLICATION,DIVISION.
+* 📈 Takes two inputs from the user.
+* 🔁 Do the calculation user select with the provided inputs.
+* ⚠️ Input validation (handles invalid inputs gracefully)
+     shows ZeroDivisionError "error can not divide by zero".
+* 🎉 Display result beautifully
+* 🔄 Ask if user want to do further calculation.
+
+---
+
+## 🛠️ Tech Stack
+
+* Python (Standard Library)
+
+  * `random` module
+
+---
+
+## 📂 How to Run
+
+1. Make sure Python is installed on your system
+2. Clone this repository:
+
+```bash
+git clone https://github.com/mrrendex2006/python-beginner-to-advance.git
+cd python-beginner-to-advance
+```
+
+3. Run the script:
+
+```bash
+python calculator.py
+```
+
+## 💡 Example
+
+```
+CHOICE::
+1.   ADDITION
+2.   SUBSTRACTION
+3.   MULTIPLICATION
+4.   DIVISION
+Choose operation (1-4): 4
+enter the first number: 20
+enter the 2nd  number : 4
+the division of the numbers is: 5.0
+Do another calculation? (y/n): 
+```
+
+---
+
+## 🎯 Learning Outcomes
+
+This project helps you understand:
+
+* Python loops (`while`)
+* Conditional statements (`if-elif-else`)
+* Exception handling (`try-except`)
+* Functions and recursion
+* User input handling
+
+---
+
+## 🔮 Future Improvements
+* Can inprove by adding mode calculations Features
+* Create a GUI version using Tkinter or PyGame.
+
+---
+
+## 🤝 Contributing
+
+Feel free to fork this repo and improve the game!
+
+---
+
+## 📜 License
+
+This project is open-source and free to use.
+
+---
+
+## 🙌 Author
+
+Made with ❤️ by **Mrrendex**

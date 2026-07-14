@@ -1,4 +1,4 @@
-# a calculator that handles different types of error you have to use functions 
+4# a calculator that handles different types of error you have to use functions 
 def calculator():
     print("\nCHOICE::")
     print("1.   ADDITION")
@@ -39,7 +39,7 @@ def calculator():
     except ValueError:
         print("please! , enter valid numbers ")
     except ZeroDivisionError as e:
-        print("error",e)
+        print("error: ",e)
 
 
 while True:
